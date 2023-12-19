@@ -3,7 +3,7 @@ version = "1.0.0"
 
 plugins {
     application
-    kotlin("jvm") version "1.6.10"
+    kotlin("jvm") version "1.9.21"
 }
 
 repositories {
@@ -13,9 +13,9 @@ repositories {
 
 dependencies {
     implementation(kotlin("stdlib"))
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-jdk8:1.6.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
 }
 
 tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
-    kotlinOptions.jvmTarget = "16"
+    kotlinOptions.jvmTarget = "17"
 }

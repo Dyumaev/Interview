@@ -18,7 +18,7 @@ class PaymentsClientImpl : PaymentsClient {
         private val PAYMENTS = (1..10000).map { id ->
             Payment(
                 paymentId = id.toString(),
-                userId = Random.nextInt(10).toString() ?: "1",
+                clientId = Random.nextInt(10).toString(),
                 amount = Random.nextLong(1000, 5000)
             )
         }
